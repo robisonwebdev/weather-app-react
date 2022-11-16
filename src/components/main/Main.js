@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../styles/components/main/Main.css';
 
 const Main = () => {
     return (
-        <section>Main</section>
+        <main>Main</main>
     );
 };
 
