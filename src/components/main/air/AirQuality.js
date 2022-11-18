@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/components/main/air/AirQuality.css';
 
 const AirQuality = () => {
     return (
-        <section>AirQuality</section>
+        <section className='air_quality'>AirQuality</section>
     );
 };
 
