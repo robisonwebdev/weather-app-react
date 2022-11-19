@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/components/main/wind/Wind.css';
 
 const Wind = () => {
     return (
-        <section>Wind</section>
+        <section className='wind'>Wind</section>
     );
 };
 
