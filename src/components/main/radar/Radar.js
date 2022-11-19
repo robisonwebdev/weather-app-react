@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/components/main/radar/Radar.css';
 
 const Radar = () => {
     return (
-        <section>Radar</section>
+        <section className='radar'>Radar</section>
     );
 };
 
