@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/components/main/moon/Moon.css';
 
 const Moon = () => {
     return (
-        <section>Moon</section>
+        <section className='moon'>Moon</section>
     );
 };
 
