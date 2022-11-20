@@ -1,4 +1,5 @@
 import React from 'react';
+import ForecastCard from './ForecastCard';
 import '../../../styles/components/main/forecastNavigation/ForecastNavigation.css';
 
 const ForecastNavigation = () => {
