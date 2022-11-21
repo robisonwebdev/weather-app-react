@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Header />
+      <Header lightMode={lightMode} setLightMode={setLightMode} />
       <Main />
       <Footer />
     </div>
