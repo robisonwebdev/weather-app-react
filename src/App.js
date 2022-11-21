@@ -5,7 +5,7 @@ import Main from './components/main/Main';
 import './styles/App.css';
 
 const App = () => {
-    const [lightMode, setLightMode] = true;
+  const [lightMode, setLightMode] = useState(true);
 
   return (
     <div className='App'>
