@@ -6,7 +6,11 @@ import '../../styles/components/header/Header.css';
 
 const Header = ({ lightMode, setLightMode }) => {
     return (
-        <header>Header</header>
+        <header>
+            <Menu />
+            <SearchBar />
+            <LightModes />
+        </header>
     );
 };
 
