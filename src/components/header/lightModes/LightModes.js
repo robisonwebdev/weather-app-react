@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
 import '../../../styles/components/header/lightModes/LightModes.css';
 
 const LightModes = () => {
