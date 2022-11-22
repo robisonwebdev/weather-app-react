@@ -8,7 +8,14 @@ const SearchBar = () => {
     };
 
     return (
-        <section className='header_search_bar'>SearchBar</section>
+        <section className='header_search_bar'>
+            <form onSubmit={handleSubmit}>
+                <input type='text' />
+                <button type='submit'>
+                    <SearchIcon />
+                </button>
+            </form>
+        </section>
     );
 };
 
