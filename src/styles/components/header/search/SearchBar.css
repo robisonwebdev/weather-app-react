@@ -20,6 +20,10 @@
     width: 100%;
 }
 
+.header_search_bar input:focus {
+    outline: none;
+}
+
 .header_search_bar button {
     background-color: inherit;
     border: none;
