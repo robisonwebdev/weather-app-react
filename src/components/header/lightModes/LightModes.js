@@ -5,7 +5,16 @@ import '../../../styles/components/header/lightModes/LightModes.css';
 
 const LightModes = () => {
     return (
-        <section className='light_modes'>LightModes</section>
+        <section className='light_modes'>
+            <div className='mode_btns'>
+                <button className='dark_mode'>
+                    <DarkModeIcon />
+                </button>
+                <button className='light_mode'>
+                    <LightModeIcon />
+                </button>
+            </div>
+        </section>
     );
 };
 
