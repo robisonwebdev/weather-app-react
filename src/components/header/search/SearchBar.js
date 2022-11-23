@@ -16,10 +16,10 @@ const SearchBar = () => {
     return (
         <section className='header_search_bar'>
             <form onSubmit={handleSubmit}>
-                <input type='text' onChange={handleChange} value={value} />
                 <button type='submit'>
                     <SearchIcon />
                 </button>
+                <input type='text' onChange={handleChange} value={value} />
             </form>
         </section>
     );
