@@ -4,9 +4,11 @@ import '../../../styles/components/header/search/SearchBar.css';
 
 const SearchBar = () => {
     const [value, setValue] = useState('');
+    const placeHolder = `Search city...`;
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setValue('');
     };
 
     const handleChange = (event) => {
@@ -19,7 +21,7 @@ const SearchBar = () => {
                 <button type='submit'>
                     <SearchIcon />
                 </button>
-                <input type='text' onChange={handleChange} value={value} />
+                <input type='text' onChange={handleChange} placeholder={placeHolder} value={value} />
             </form>
         </section>
     );
