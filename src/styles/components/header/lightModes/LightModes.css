@@ -11,8 +11,19 @@
 .mode_btns {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
+    height: 100%;
+    width: 100%;
+}
+
+.mode_btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: none;
+    background-color: inherit;
     height: 100%;
     width: 100%;
 }
