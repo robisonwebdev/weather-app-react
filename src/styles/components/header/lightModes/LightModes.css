@@ -8,8 +8,10 @@
     width: 100px;
 }
 
-.modes_btns {
+.mode_btns {
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     height: 100%;
     width: 100%;
