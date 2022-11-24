@@ -6,7 +6,7 @@ const MenuButton = () => {
     return (
         <section className='menu_button'>
             <button>
-                <MenuButton />
+                <MenuIcon />
             </button>
         </section>
     );
