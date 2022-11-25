@@ -4,6 +4,12 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import '../../../styles/components/header/lightModes/LightModes.css';
 
 const LightModes = () => {
+    const [lightMode, setLightMode] = useState(true);
+
+    const handleModeChange = () => {
+        setLightMode(!lightMode);
+    };
+
     return (
         <section className='light_modes'>
             <div className='mode_btns'>
