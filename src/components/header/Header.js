@@ -4,11 +4,11 @@ import MenuButton from './menu/MenuButton';
 import SearchBar from './search/SearchBar';
 import '../../styles/components/header/Header.css';
 
-const Header = ({ lightMode, setLightMode }) => {
+const Header = ({ lightMode, location, setLightMode, setLocation }) => {
     return (
         <header>
             <MenuButton />
-            <SearchBar />
+            <SearchBar location={location} setLocation={setLocation} />
             <LightModes />
         </header>
     );
