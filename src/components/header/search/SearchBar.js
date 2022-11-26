@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import '../../../styles/components/header/search/SearchBar.css';
 
-const SearchBar = () => {
-    const [value, setValue] = useState('');
+const SearchBar = ({ location, setLocation }) => {
+    const [value, setValue] = useState(location);
     const placeHolder = `Search city...`;
 
     const handleSubmit = (event) => {
