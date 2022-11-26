@@ -5,12 +5,13 @@ import Main from './components/main/Main';
 import './styles/App.css';
 
 const App = () => {
+  const [location, setLocation] = useState('');
   const [lightMode, setLightMode] = useState(true);
 
   return (
     <div className='App'>
-      <Header lightMode={lightMode} setLightMode={setLightMode} />
-      <Main />
+      <Header lightMode={lightMode} location={location} setLightMode={setLightMode} setLocation={setLocation} />
+      <Main location={location} />
       <Footer />
     </div>
   );
