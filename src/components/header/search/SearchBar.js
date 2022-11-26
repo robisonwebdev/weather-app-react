@@ -8,6 +8,7 @@ const SearchBar = ({ location, setLocation }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setLocation(value);
         setValue('');
     };
 
