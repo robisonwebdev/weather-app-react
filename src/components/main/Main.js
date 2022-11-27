@@ -13,7 +13,11 @@ const Main = ({ location }) => {
         axios
         .get(coordinates_API)
         .then(res => {
-            setCoordinates(res.data);
+            const latitude = res.data.data[0].latitude;
+            const longitude = res.data.data[0].longitude;
+            const fullCoordinates = `${latitude}, ${longitude}`;
+
+            setCoordinates(fullCoordinates);
         })
         .catch(err => console.log(err));
     }, [location]);
