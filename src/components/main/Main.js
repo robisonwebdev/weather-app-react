@@ -3,7 +3,8 @@ import axios from 'axios';
 import '../../styles/components/main/Main.css';
 
 const Main = ({ location }) => {
-    const [coordinates, setCoordinates] = useState('');
+    const [latitude, setLatitude] = useState('');
+    const [longitude, setLongitude] = useState('');
 
     const fetchCoordinates = useCallback(() => {
         if (location === '') return null;
@@ -13,24 +14,38 @@ const Main = ({ location }) => {
         axios
         .get(coordinates_API)
         .then(res => {
-            const latitude = res.data.data[0].latitude;
-            const longitude = res.data.data[0].longitude;
-            const fullCoordinates = `${latitude}, ${longitude}`;
-
-            setCoordinates(fullCoordinates);
+            setLatitude(res.data.data[0].latitude)
+            setLongitude(res.data.data[0].longitude);
         })
         .catch(err => console.log(err));
     }, [location]);
 
-    const fetchData = useCallback(() => {}, []);
+    const fetchData = useCallback(() => {
+        if (latitude === '' || longitude === '') return null;
 
+        const weather_API = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=623af812f25cabf72aec314e2671a2c6`;
+
+        axios
+        .get(weather_API)
+        .then(res => {
+            console.log(res.data);
+        })
+        .catch(err => console.log(err))
+    }, [latitude, longitude]);
+
+    // Gets coordinates based on city or zip code
     useEffect(() => {
         fetchCoordinates();
     }, [fetchCoordinates]);
 
+    // Gets weather information based on coordinates
+    useEffect(() => {
+        fetchData();
+    }, [fetchData]);
+
     return (
         <main>
-            {console.log(coordinates)}
+            {/* {console.log(latitude, longitude)} */}
             Main
         </main>
     );
