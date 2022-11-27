@@ -4,7 +4,7 @@ import '../../../styles/components/header/search/SearchBar.css';
 
 const SearchBar = ({ location, setLocation }) => {
     const [value, setValue] = useState(location);
-    const placeHolder = `Search city...`;
+    const placeHolder = `Search city or zip code...`;
 
     const handleSubmit = (event) => {
         event.preventDefault();
