@@ -13,7 +13,7 @@ const MenuContainer = () => {
 
     return (
         <section className='menu_container'>
-            <button onClick={handleButton}>
+            <button className='menu_button' onClick={handleButton}>
                 {showMenu ? <CloseIcon /> : <MenuIcon />}       
             </button>
             {showMenu ? <Menu /> : null}
