@@ -1,0 +1,9 @@
+.menu_button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
