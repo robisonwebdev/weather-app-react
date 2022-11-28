@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from './Menu';
-import '../../../styles/components/header/menu/MenuButton.css';
+import '../../../styles/components/header/menu/MenuContainer.css';
 
-const MenuButton = () => {
+const MenuContainer = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const handleButton = () => {
@@ -12,7 +12,7 @@ const MenuButton = () => {
     };
 
     return (
-        <section className='menu_button'>
+        <section className='menu_container'>
             <button onClick={handleButton}>
                 {showMenu ? <CloseIcon /> : <MenuIcon />}       
             </button>
@@ -21,4 +21,4 @@ const MenuButton = () => {
     );
 };
 
-export default MenuButton;
+export default MenuContainer;
