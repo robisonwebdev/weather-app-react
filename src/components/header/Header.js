@@ -1,13 +1,13 @@
 import React from 'react';
 import LightModes from './lightModes/LightModes';
-import MenuButton from './menu/MenuButton';
+import MenuContainer from './menu/MenuContainer';
 import SearchBar from './search/SearchBar';
 import '../../styles/components/header/Header.css';
 
 const Header = ({ lightMode, location, setLightMode, setLocation }) => {
     return (
         <header>
-            <MenuButton />
+            <MenuContainer />
             <SearchBar location={location} setLocation={setLocation} />
             <LightModes />
         </header>
