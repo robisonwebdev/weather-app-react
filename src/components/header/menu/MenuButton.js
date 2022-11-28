@@ -7,9 +7,13 @@ import '../../../styles/components/header/menu/MenuButton.css';
 const MenuButton = () => {
     const [showMenu, setShowMenu] = useState(false);
 
+    const handleButton = () => {
+        setShowMenu(!showMenu);
+    };
+
     return (
         <section className='menu_button'>
-            <button>
+            <button onClick={handleButton}>
                 {showMenu ? <CloseIcon /> : <MenuIcon />}       
             </button>
             {showMenu ? <Menu /> : null}
