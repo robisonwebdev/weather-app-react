@@ -6,6 +6,8 @@ const ForecastCard = () => {
 
     const getWeatherIcon = () => {};
 
+    const getWeatherTemperature = () => {};
+
     return (
         <div className='forecast_card'>
             <div className='card_day'>
@@ -13,6 +15,7 @@ const ForecastCard = () => {
             </div>
             <div className='card_weather'>
                 {getWeatherIcon()}
+                {getWeatherTemperature}
             </div>
         </div>
     );
