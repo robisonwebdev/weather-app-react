@@ -3,7 +3,10 @@ import '../../../styles/components/main/forecastNavigation/ForecastCard.css';
 
 const ForecastCard = () => {
     return (
-        <div className='forecast_card'>ForecastCard</div>
+        <div className='forecast_card'>
+            <div className='card_day'></div>
+            <div className='card_weather'></div>
+        </div>
     );
 };
 
